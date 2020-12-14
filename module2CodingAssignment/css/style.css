@@ -1,50 +1,101 @@
+/*
+  Author:  Carol Kelly
+  Date Started:  December 14, 2020
+  Last Updated:  December 14, 2020
+
+  Style sheet for a menu site
+
+  Coursera course - Module 2 solution
+*/
+
+/*base styles*/
 html{
   font-family: "Garamond", serif;
 }
 
+/*Styles applied to the main header only.*/
 h1{
   text-align: center;
-  font-size: 350%;
+  font-size: 5vw;
 }
 
-#menuItems{
-  //clear: both;  
-}
-
+/*All of the menu items have the same basic style*/
 div{
   border: 2px solid black;
-  margin: 5%;
-  max-width: 33%;
-  //float: left;
-}
-
-h2{
-  float: right;
-  border: 2px solid black;
-}
-
-#chicken{
   background-color: gray;
-  float: left;
 }
+
+/*How the menu descritpions are displayed*/
+div p{
+ font-size: 1vw;
+ width: 75%;
+ padding: 2%;
+}
+
+/*All of the menu titles have the same general style*/
+h2{
+  font-size: 1.3vw;
+  text-align: center;
+  float: right;
+  width: 25%;
+  border: 2px solid black;
+  margin: 0;
+}
+
+/*Each menu item has a different background color*/
 #chicken h2{
   background-color: pink;
 }
 
-
-#beef{
-  background-color: gray;
-  float: left;
-}
 #beef h2{
   background-color: red;
 }
 
-
-#sushi{
-  background-color: gray;
-  float: left;
-}
 #sushi h2{
   background-color: yellow;
+}
+
+
+/*screen size styles*/
+/*Destop size*/
+@media (min-width: 992px){
+  html{
+    background-color: lightgoldenrodyellow
+  }
+  div{
+    float: left;
+    max-width: 20%;
+    margin: 5%;
+  }
+}
+
+/*Tablet size*/
+@media (min-width: 768px) and (max-width: 991px){
+  html{
+    background-color: lightpink;
+  }
+  div{
+    margin: 5%;
+  }
+  #chicken{
+    width: 35%;
+    float:left;
+  }
+  #beef{
+    width: 35%;
+    float: right;
+  }
+  #sushi{
+    clear:left;
+  }
+}
+
+/*Mobile size*/
+@media (max-width: 767px){
+  html{
+    background-color: lightgreen;
+  }
+  div{
+    margin: 5%;
+  }
 }
