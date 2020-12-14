@@ -1,0 +1,50 @@
+html{
+  font-family: "Garamond", serif;
+}
+
+h1{
+  text-align: center;
+  font-size: 350%;
+}
+
+#menuItems{
+  //clear: both;  
+}
+
+div{
+  border: 2px solid black;
+  margin: 5%;
+  max-width: 33%;
+  //float: left;
+}
+
+h2{
+  float: right;
+  border: 2px solid black;
+}
+
+#chicken{
+  background-color: gray;
+  float: left;
+}
+#chicken h2{
+  background-color: pink;
+}
+
+
+#beef{
+  background-color: gray;
+  float: left;
+}
+#beef h2{
+  background-color: red;
+}
+
+
+#sushi{
+  background-color: gray;
+  float: left;
+}
+#sushi h2{
+  background-color: yellow;
+}
